@@ -90,36 +90,47 @@ section {
     gap: 15px;
     margin-top: 30px;
 }
-/* Projects Section */
-
 .projects {
   padding: 80px 10%;
-  background: linear-gradient(to right, #f8fbff, #eef4ff);
+  background: #eef2ff;
   text-align: center;
 }
 
 .projects h2 {
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 50px;
-  color: #1f2937;
+  color: #1e293b;
 }
 
-.project-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
+.project-card {
+  background-color: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
 .project-card h3 {
-  font-size: 24px;
   color: #2563eb;
   margin-bottom: 15px;
+  font-size: 26px;
 }
 
 .project-card p {
-  font-size: 16px;
-  line-height: 1.7;
   color: #444;
+  line-height: 1.7;
   margin-bottom: 20px;
 }
 
@@ -128,84 +139,14 @@ section {
   text-decoration: none;
   background-color: #2563eb;
   color: white;
-  padding: 12px 22px;
+  padding: 12px 20px;
   border-radius: 8px;
   font-weight: bold;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .project-card a:hover {
   background-color: #1d4ed8;
-  transform: translateY(-3px);
-}
-
-/* Individual Project Box */
-
-.project-card > h3,
-.project-card > p,
-.project-card > a {
-  background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Better Card Layout */
-
-.project-card {
-  background: transparent;
-}
-
-.project-card h3,
-.project-card p,
-.project-card a {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.project-card h3 {
-  padding-top: 25px;
-}
-
-.project-card a {
-  margin-bottom: 25px;
-}
-
-/* Card Container Style */
-
-.project-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.project-card h3,
-.project-card p,
-.project-card a {
-  width: 280px;
-  background-color: white;
-}
-
-.project-card h3 {
-  border-radius: 15px 15px 0 0;
-}
-
-.project-card a {
-  border-radius: 0 0 15px 15px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
-
-  .projects h2 {
-    font-size: 32px;
-  }
-
-  .project-card {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .contact-form {
     max-width: 500px;
