@@ -38,13 +38,13 @@ header {
 }
 .home {
     height: 80vh;
-    background: linear-gradient(to right, #222, #555);
+    background: #dbeafe;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
-    color: white;
+    color: black;
 }
 .home-content h1 {
     font-size: 40px;
